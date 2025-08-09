@@ -13,7 +13,18 @@ _Create a site or blog from your GitHub repositories with GitHub Pages._
 
 </header>
 
-<!--
+
+## Step 5: Merge your pull request
+
+_Nice work, friend :heart:! People will be reading your blog in no time!_
+
+You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glossary#merge) your pull request!
+
+### :keyboard: Activity: Merge your changes
+
+1. Merge your changes from `my-pages` into `main`. If you created the pull request in step 2, just open that PR and click on **Merge pull request**. If you did not create the pull request earlier, you can do it now by following the instructions in [step 2](/.github/steps/2-configure-your-site.md).
+1. (optional) Delete the branch `my-pages`.
+
   <<< Author notes: Step 2 >>>
   Start this step by acknowledging the previous step.
   Define terms and link to docs.github.com.
@@ -41,12 +52,12 @@ We need to use a blog-ready theme. For this activity, we will use a theme named 
 1. (optional) You can modify the other configuration variables such as `title:`, `author:`, and `description:` to further customize your site.
 1. Commit your changes.
 1. (optional) Create a pull request to view all the changes you'll make throughout this course. Click the **Pull Requests** tab, click **New pull request**, set `base: main` and `compare:my-pages`.
+
 1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
 
 <footer>
 
-<!--
-  <<< Author notes: Footer >>>
+
   Add a link to get support, GitHub status page, code of conduct, license link.
 -->
 
