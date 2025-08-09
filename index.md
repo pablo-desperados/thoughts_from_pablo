@@ -1,5 +1,4 @@
 ---
-title: Welcome to my blog
+title: Simply living and writing about tech and code things
 ---
 
-hello hows it going
