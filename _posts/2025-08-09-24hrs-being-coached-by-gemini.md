@@ -1,4 +1,4 @@
 ---
-title: "So it starts..."
-date: 2019-01-20
+title: "Can AI truly coach me into success?"
+date: 2025-08-11
 ---
