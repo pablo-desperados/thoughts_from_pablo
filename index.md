@@ -11,6 +11,7 @@ title: Pablo's Thoughts
     <div style="display: flex; flex-direction: column; gap: 15px; font-size: 1.2rem;">
       <a href="{{ site.baseurl }}/blog">[ 01 ] READ BLOG</a>
       <a href="{{ site.baseurl }}/stories">[ 02 ] READ STORIES</a>
+      <a href="{{ site.baseurl }}/me">[ 03 ] ABOUT ME</a>
     </div>
   </nav>
 </div>
