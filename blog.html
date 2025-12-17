@@ -1,0 +1,15 @@
+---
+layout: default
+title: Tech & Programming
+permalink: /blog/
+---
+
+<div id="tech-blog">
+  <h1>Tech & Programming</h1>
+  <ul class="posts">
+    {% for post in site.categories.blog %}
+      <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <p><a href="{{ site.baseurl }}/">← Back Home</a></p>
+</div>

@@ -1,6 +1,8 @@
 ---
+layout: post
 title: "Can AI truly coach me into success?"
 date: 2025-08-11
+categories: blog
 ---
 
 **_Here is the simple premise of the experiment I decided to conduct on my own financial security:_**
