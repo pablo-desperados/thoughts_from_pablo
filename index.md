@@ -3,12 +3,14 @@ layout: default
 title: Pablo's Thoughts
 ---
 
-<div class="landing-container" style="text-align: center; margin-top: 20%;">
-  <h1>Pablo's Thoughts</h1>
-  <nav>
-    <div style="display: flex; justify-content: center; gap: 40px; font-size: 1.5rem;">
-      <a href="{{ site.baseurl }}/blog" style="text-decoration: none; border: 1px solid #333; padding: 10px 20px; border-radius: 5px;">💻 Tech & Work</a>
-      <a href="{{ site.baseurl }}/stories" style="text-decoration: none; border: 1px solid #333; padding: 10px 20px; border-radius: 5px;">✍️ Stories & Writing</a>
+<div class="terminal-container">
+<pre style="line-height: 1.2; font-size: 12px; border: none; background: transparent; color: #00ff41;">
+</pre>
+
+  <nav style="margin-top: 2rem;">
+    <div style="display: flex; flex-direction: column; gap: 15px; font-size: 1.2rem;">
+      <a href="{{ site.baseurl }}/blog">[ 01 ] READ BLOG</a>
+      <a href="{{ site.baseurl }}/stories">[ 02 ] READ STORIES</a>
     </div>
   </nav>
 </div>
