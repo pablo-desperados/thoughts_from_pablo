@@ -4,12 +4,12 @@ title: Hi! 🦉
 permalink: /me/
 ---
 
+# Hi! 🦉
 
-My name is **Pablo Mujica**. By day, I navigate the architecture of Data Engineering for a company based in Barcelona. By night, the logic gives way to fiction—small stories, poems, and prose.
+My name is **Pablo Mujica**. By day, I navigate the world of Data Engineering for a company based in Barcelona. By night, I write fiction, small stories, poems, and other stuff.
 
 This space serves as a repository for both versions of that work.
 
----
 
 ### // Recent Things I've read/seen.
 
