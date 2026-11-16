@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
+  {% if page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
 </head>
 <body>
   <div style="max-width: 800px; margin: 2em auto; padding: 0 1em;">
