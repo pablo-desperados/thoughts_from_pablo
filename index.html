@@ -1,0 +1,20 @@
+---
+layout: default
+title: pablothoughts
+section: home
+---
+<p class="intro">&gt; pablo mujica. data engineer by day in barcelona, stories by night. both end up here.</p>
+
+{%- assign items = site.posts | concat: site.projects | sort: "date" | reverse %}
+<div class="wall" id="wall">
+  {%- for item in items %}
+    {%- if item.collection == "projects" %}
+      {% include tile-project.html project=item %}
+    {%- else %}
+      {% include tile-story.html post=item %}
+    {%- endif %}
+  {%- endfor %}
+</div>
+<p class="wall-empty" hidden>nothing here yet.</p>
+
+<script src="{{ '/js/wall.js' | relative_url }}" defer></script>

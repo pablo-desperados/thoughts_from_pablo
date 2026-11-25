@@ -1,0 +1,13 @@
+{%- assign sec = page.section -%}
+<header class="site-header">
+  <a class="logo" href="{{ '/' | relative_url }}">pablothoughts_</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="{{ '/' | relative_url }}#all" data-filter="all"{% if sec == 'home' %} aria-current="page"{% endif %}>[ all ]</a>
+    {%- if site.projects.size > 0 %}
+    <a href="{{ '/' | relative_url }}#projects" data-filter="projects"{% if sec == 'projects' %} aria-current="page"{% endif %}>[ projects ]</a>
+    {%- endif %}
+    <a href="{{ '/' | relative_url }}#stories" data-filter="stories"{% if sec == 'stories' %} aria-current="page"{% endif %}>[ stories ]</a>
+    <a href="{{ '/me/' | relative_url }}"{% if sec == 'about' %} aria-current="page"{% endif %}>[ about ]</a>
+    <a href="{{ site.substack_url }}">[ substack ↗ ]</a>
+  </nav>
+</header>

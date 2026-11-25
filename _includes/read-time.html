@@ -1,0 +1,12 @@
+{%- comment -%}
+  Minutes to read a post: words / 200, rounded, at least 1.
+  Set `read_time: 5` in a post's front matter to override.
+{%- endcomment -%}
+{%- if include.doc.read_time -%}
+  {{- include.doc.read_time -}}
+{%- else -%}
+  {%- assign rt_words = include.doc.content | strip_html | number_of_words -%}
+  {%- assign rt_min = rt_words | plus: 100 | divided_by: 200 -%}
+  {%- if rt_min < 1 -%}{%- assign rt_min = 1 -%}{%- endif -%}
+  {{- rt_min -}}
+{%- endif %} min

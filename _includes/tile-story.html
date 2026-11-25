@@ -1,0 +1,9 @@
+{%- assign p = include.post -%}
+<a class="tile tile-story" href="{{ p.url | relative_url }}" data-kind="stories">
+  <span class="tile-meta">// {% if p.categories contains "story" %}story{% else %}tech{% endif %} · {% include read-time.html doc=p %}</span>
+  <span class="tile-body">
+    <span class="tile-title">{{ p.title | escape }}</span>
+    <span class="tile-dek">{{ p.description | default: p.excerpt | strip_html | truncatewords: 28 }}</span>
+  </span>
+  <span class="tile-foot"><span>{{ p.date | date: "%-d %b %Y" | downcase }}</span><span class="tile-cta">read →</span></span>
+</a>

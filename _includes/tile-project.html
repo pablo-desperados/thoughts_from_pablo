@@ -1,0 +1,14 @@
+{%- assign pr = include.project -%}
+<a class="tile tile-project" href="{{ pr.url | relative_url }}" data-kind="projects">
+  <span class="tile-shot">
+    {%- if pr.screenshot -%}
+    <img src="{{ pr.screenshot | relative_url }}" alt="" loading="lazy">
+    {%- else -%}
+    <span class="tile-shot-empty">[screenshot]</span>
+    {%- endif -%}
+  </span>
+  <span class="tile-caption">
+    <span class="tile-caption-top"><span>{{ pr.title | escape }}</span><span class="dim">{{ pr.date | date: "%Y" }}</span></span>
+    <span class="tile-dek">{{ pr.summary | escape }}</span>
+  </span>
+</a>

@@ -1,1 +1,37 @@
-theme: minima
+title: pablothoughts
+description: Pablo Mujica. Data engineer by day in Barcelona, stories by night.
+author: Pablo Mujica
+url: https://pablothoughts.com
+substack_url: https://givemeatimemachine.substack.com
+github_url: https://github.com/pablo-desperados
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-feed
+
+# One file per project in _projects/ (see _projects/_template.md).
+# The [ projects ] filter appears on the site once the first one is published.
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      section: stories
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+      section: projects
+
+exclude:
+  - claudeskills
+  - README.md
+  - LICENSE
+  - .github

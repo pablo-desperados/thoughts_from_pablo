@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<article class="article">
+  <header class="article-head">
+    <p class="meta">// {% if page.categories contains "story" %}story{% else %}tech{% endif %} · {% include read-time.html doc=page %} · {{ page.date | date: "%-d %b %Y" | downcase }}</p>
+    <h1 class="article-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  <div class="article-end">
+    <span class="dim">— end of transmission —</span>
+    <a class="btn" href="{{ site.substack_url }}">[ get new stories on substack ↗ ]</a>
+  </div>
+
+  {%- if page.previous or page.next %}
+  <nav class="pager" aria-label="More stories">
+    {%- if page.previous %}
+    <a class="pager-link" href="{{ page.previous.url | relative_url }}"><span class="dim">← previous story</span><span>{{ page.previous.title | escape }}</span></a>
+    {%- endif %}
+    {%- if page.next %}
+    <a class="pager-link pager-next" href="{{ page.next.url | relative_url }}"><span class="dim">next story →</span><span>{{ page.next.title | escape }}</span></a>
+    {%- endif %}
+  </nav>
+  {%- endif %}
+</article>

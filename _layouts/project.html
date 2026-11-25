@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<article class="project">
+  <p class="crumbs"><a href="{{ '/' | relative_url }}#projects">~/projects</a> / {{ page.slug }}</p>
+
+  <header class="project-head">
+    <div>
+      <h1 class="project-title">{{ page.title | escape }}</h1>
+      <p class="project-summary">{{ page.summary | escape }}{% if page.date %} · {{ page.date | date: "%Y" }}{% endif %}</p>
+    </div>
+    {%- if page.code_url or page.live_url %}
+    <div class="project-links">
+      {%- if page.code_url %}<a class="btn" href="{{ page.code_url }}">[ code ↗ ]</a>{% endif %}
+      {%- if page.live_url %}<a class="btn" href="{{ page.live_url }}">[ live ↗ ]</a>{% endif %}
+    </div>
+    {%- endif %}
+  </header>
+
+  {%- if page.screenshot %}
+  <figure class="project-shot">
+    <img src="{{ page.screenshot | relative_url }}" alt="Screenshot of {{ page.title | escape }}">
+  </figure>
+  {%- endif %}
+
+  {%- if page.stack %}
+  <ul class="stack" aria-label="Built with">
+    {%- for tool in page.stack %}
+    <li>{{ tool }}</li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  {%- if page.previous or page.next %}
+  <nav class="pager" aria-label="More projects">
+    {%- if page.previous %}
+    <a class="pager-link" href="{{ page.previous.url | relative_url }}"><span class="dim">← previous project</span><span>{{ page.previous.title | escape }}</span></a>
+    {%- endif %}
+    {%- if page.next %}
+    <a class="pager-link pager-next" href="{{ page.next.url | relative_url }}"><span class="dim">next project →</span><span>{{ page.next.title | escape }}</span></a>
+    {%- endif %}
+  </nav>
+  {%- endif %}
+</article>
